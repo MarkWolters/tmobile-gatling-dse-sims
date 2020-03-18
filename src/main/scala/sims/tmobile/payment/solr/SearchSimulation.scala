@@ -20,7 +20,7 @@ class SearchSimulation extends BaseSimulation {
   val searchScenario = scenario("queryPaymentsBatch").randomSwitch(
     (50,exec(feed(dataFeed.dptSolrQuery).exec(actions.dptQueryWithSolr("dptSolrQuery")))),
     (25,exec(feed(dataFeed.txDetailsSolrQuery).exec(actions.txDetailsQueryWithSolr("txDetailsSolrQuery")))),
-    (25,exec(feed(dataFeed.autopayDetailsSolrQuery).exec(actions.autopayDetailsQueryWithSolr("autopayDetailsSolrQuery"))))
+    (50,exec(feed(dataFeed.autopayDetailsSolrQuery).exec(actions.autopayDetailsQueryWithSolr("autopayDetailsSolrQuery"))))
   )
 
   setUp(

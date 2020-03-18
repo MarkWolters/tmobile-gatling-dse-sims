@@ -119,7 +119,7 @@ exit 1"""
 import sbtassembly.AssemblyPlugin.defaultShellScript
 assemblyOption in assembly := (assemblyOption in assembly).value.copy(prependShellScript = Some(shellScript.split("\n").toSeq))
 
-assemblyJarName in assembly := s"tmobile-gatling-dse-sims-v3"
+assemblyJarName in assembly := s"tmobile-gatling-dse-sims-v6"
 
 lazy val assemblyLauncher = taskKey[Unit]("A deprecated packaging task.")
 assemblyLauncher := {
