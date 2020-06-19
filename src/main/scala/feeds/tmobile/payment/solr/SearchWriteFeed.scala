@@ -23,7 +23,7 @@ class SearchWriteFeed extends BaseFeed with LazyLogging {
       "dps_payment_id" -> getRandomNumber(bigint_size).toInt,
       "card_first_6" -> getRandomNumber(bigint_size).toString,
       "card_last_4" -> getRandomNumber(bigint_size).toString,
-      "process_id" -> getRandomNumber(bigint_size).toString
+      "process_id" -> getRandomNumber(bigint_size).toString,
       "accuity_abarouting_number" -> getRandomNumber(bigint_size).toString,
       "acquirer_approval_code" -> getRandomNumber(bigint_size).toString,
       "acquirer_avs_responsecode" -> getRandomNumber(bigint_size).toString,
